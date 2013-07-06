@@ -12,10 +12,10 @@ To use Tweedia, just include it in your page. For now, Tweedia also requires jQu
 <script src="tweedia.js"></script>
 ```
 
-From here, call Tweedia.extract to find embedded media:
+From here, call Tweedia.extract to find direct urls for embedded media:
 
 ```javascript
 Tweedia.extract(tweet, function(url){
-	alert(url); 
+	alert(url);  // e.g. www.something.com/picture.jpg
 });
 ```
