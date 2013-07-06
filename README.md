@@ -1,7 +1,7 @@
 Tweedia
 ========
 
-Tweedia is a Twitter Media extractor.  It will extract images from a Tweet object obtained via [Twitter's REST API v1.1](https://dev.twitter.com/docs/api/1.1).
+Tweedia is a Twitter Media extractor.  It will extract image links from a Tweet object obtained via [Twitter's REST API v1.1](https://dev.twitter.com/docs/api/1.1).
 
 ## Getting Started
 
@@ -19,3 +19,5 @@ Tweedia.extract(tweet, function(url){
 	alert(url);  // e.g. www.something.com/picture.jpg
 });
 ```
+
+Twitpic, yfrog, and Instagram are currently supported.
