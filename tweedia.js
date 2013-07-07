@@ -37,7 +37,6 @@ window.Tweedia = Tweedia = {
     
     getInstagram : function(link, callback) {   
         $.ajax({
-            async: false,
             url:"http://api.instagram.com/oembed?url="+link,
             dataType: 'jsonp',
             success:function(data){
