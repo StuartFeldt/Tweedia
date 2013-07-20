@@ -47,4 +47,4 @@ Tweedia.extractImages(tweet, function(url){
 });
 ```
 
-Twitpic, yfrog, Instagram, YouTube, and Vine are currently supported.
+Twitpic, yfrog, Instagram, YouTube, and Vine are currently supported.  Support for more services is welcome!
