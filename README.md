@@ -23,16 +23,17 @@ Tweedia.extractImages(tweet, function(url){
 
 ####Extract image embed html
 ```javascript
+var options = {width: 300, class: 'extracted-images'};
 Tweedia.extractImagesHTML(tweet, function(data){
-	alert(data);  // e.g. <img src="www.something.com/picture.jpg" />
+	alert(data);  // e.g. <img width='300' class='extracted-images' src="www.something.com/picture.jpg" />
 });
 ```
 
 ####Extract video embed html
 ```javascript
-var options = {height: 380, width: 380};
+var options = {height: 380, width: 380, class: 'vine'};
 Tweedia.extractVideoHTML(tweet, options, function(data){
-	alert(data);  // e.g. <iframe id='eFrame' src='http://vine.co/v/bJjdTLBnwx1/card' width='380' height='380' frameborder='0'></iframe>
+	alert(data);  // e.g. <iframe class='vine' src='http://vine.co/v/bJjdTLBnwx1/card' width='380' height='380' frameborder='0'></iframe>
 });
 ```
 
