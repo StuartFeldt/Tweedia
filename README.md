@@ -30,7 +30,7 @@ Tweedia.extractImagesHTML(tweet, function(data){
 
 ####Extract video embed html
 ```javascript
-var options = {height: 380, width 380};
+var options = {height: 380, width: 380};
 Tweedia.extractVideoHTML(tweet, options, function(data){
 	alert(data);  // e.g. <iframe id='eFrame' src='http://vine.co/v/bJjdTLBnwx1/card' width='380' height='380' frameborder='0'></iframe>
 });
