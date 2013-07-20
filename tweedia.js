@@ -60,7 +60,7 @@ window.Tweedia = Tweedia = {
                     /* check for vine */
                     if(tweet.entities.urls[u].expanded_url.indexOf("vine.co") !== -1) {
                         var parts = tweet.entities.urls[u].expanded_url.split("/");
-                        callback('<iframe class="vine-embed loaded playing" src="https://vine.co/v/' + parts[parts.length - 1] + '/card" width="' + options.width + '" height="' + options.height + '" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>');
+                        callback('<iframe class="vine-embed" src="https://vine.co/v/' + parts[parts.length - 1] + '/card" width="' + options.width + '" height="' + options.height + '" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>');
                     }
                 }
              }
