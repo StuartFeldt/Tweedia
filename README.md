@@ -30,7 +30,7 @@ Tweedia.extractImagesHTML(tweet, function(data){
 
 ####Extract video embed html
 ```javascript
-Tweedia.extractImagesHTML(tweet, function(data){
+Tweedia.extractVideoHTML(tweet, function(data){
 	alert(data);  // e.g. <iframe id='eFrame' src='http://vine.co/v/bJjdTLBnwx1/card' width='380' height='380' frameborder='0'></iframe>
 });
 ```
