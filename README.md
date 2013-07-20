@@ -14,19 +14,35 @@ To use Tweedia, just include it in your page. For now, Tweedia also requires jQu
 
 From here, call Tweedia.extract to find direct urls for embedded media:
 
+####Extract direct image urls
 ```javascript
-Tweedia.extract(tweet, function(url){
+Tweedia.extractImages(tweet, function(url){
 	alert(url);  // e.g. www.something.com/picture.jpg
 });
 ```
+
+####Extract image embed html
+```javascript
+Tweedia.extractImagesHTML(tweet, function(data){
+	alert(data);  // e.g. <img src="www.something.com/picture.jpg" />
+});
+```
+
+####Extract video embed html
+```javascript
+Tweedia.extractImagesHTML(tweet, function(data){
+	alert(data);  // e.g. <iframe id='eFrame' src='http://vine.co/v/bJjdTLBnwx1/card' width='380' height='380' frameborder='0'></iframe>
+});
+```
+
 ### Dealing with multiple images
 
 Tweedia also supports multiple image links per tweet.
 
 ```javascript
-Tweedia.extract(tweet, function(url){
+Tweedia.extractImages(tweet, function(url){
 	alert(url);  // this callback will be called for each embedded image link
 });
 ```
 
-Twitpic, yfrog, and Instagram are currently supported.
+Twitpic, yfrog, Instagram, YouTube, and Vine are currently supported.
