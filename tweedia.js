@@ -15,10 +15,7 @@ window.Tweedia = Tweedia = {
                         }
                     }
 
-            }
-            
-          /* Search url entities */  
-          if(tweet.entities.urls !== undefined && tweet.entities.urls.length > 0) {
+            } else if(tweet.entities.urls !== undefined && tweet.entities.urls.length > 0) {
                 for(var u in tweet.entities.urls) {
 
                     /* Check for jpg, png, gif */
@@ -33,6 +30,8 @@ window.Tweedia = Tweedia = {
                             });
                         }
                     }
+             } else {
+                 callback(-1);
              }
     },
     
